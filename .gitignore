@@ -1,0 +1,14 @@
+.DS_Store
+composer.lock
+.env
+.htaccess
+writable/logs/*
+!writable/logs/index.html
+writable/cache/*
+!writable/cache/index.html
+writable/session/*
+!writable/session/index.html
+writable/uploads/*
+!writable/uploads/index.html
+writable/debugbar/*.json
+
