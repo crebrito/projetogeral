@@ -7,30 +7,34 @@ class Users extends BaseController
 
 	private $session;
 
+	//=============================================
 	public function __construct()
 	{
 		$this->session = session();
 	}
 
+	//=============================================
 	public function index()
 	{
-
-		$datos = array(
-			'id_user' => 1,
-			'nombre' => 'Carlos'
-		);
-		$this->session->set($datos);
-
+		if($this->checkSession()){
+			//active session
+		}else{
+			//inactive session - show login form
+			$this->login();
+		}
 	}
 
-	public function menu_inicial(){
+	//=============================================
+	public function login()
+	{
+		// show the login page
+		echo view('users/login');
+	}
 
-		if(!$this->session->has('id_user')){
-			echo 'Acceso Prohibido';
-			exit();
-		}
-		echo 'Estoy en el menú principal';
-
+	//=============================================
+	private function checkSession()
+	{
+		return $this->session->has('id_user');
 	}
 
 }

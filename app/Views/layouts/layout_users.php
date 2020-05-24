@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProjetoGeral</title>
+    <title>ProjetoGeral - Users</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="<?= base_url('assets/css/bootstrap.min.css') ?>">
@@ -15,7 +15,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 text-center bg-dark text-light p-3">
-                <h3>PROJETO GERAL</h3>
+                <h3>PROJETO GERAL - Users</h3>
             </div>
         </div>
         <div class="row mt-5 mb-5">
