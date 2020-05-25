@@ -7,17 +7,23 @@
 <div class="row mt-3 mb-3">
     
     <div class="col-4 offset-4 card bg-light">
+
+        <?php if(isset($error)): ?>
+            <div class="alert alert-danger text-center">
+                <?= $error ?>
+            </div>
+        <?php endif; ?>
         
         <form action="<?= site_url('users/login') ?>" method="post">
             
             <div class="form-group mt-3">
                 <label for="username">Usuario:</label>
-                <input type="text" name="text_username" class="form-control" placeholder="Escriba su nombre de usuario" id="username" required>
+                <input type="text" name="username" class="form-control" placeholder="Escriba su nombre de usuario" id="username">
             </div>
             
             <div class="from-group mb-3">
                 <label for="password">Contraseña:</label>
-                <input type="password" name="text_password" class="form-control" placeholder="Escriba su contraseña" id="password" required>
+                <input type="password" name="password" class="form-control" placeholder="Escriba su contraseña" id="password" required>
             </div>
 
             <div class="row">
