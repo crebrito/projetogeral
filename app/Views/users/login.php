@@ -18,7 +18,7 @@
             
             <div class="form-group mt-3">
                 <label for="username">Usuario:</label>
-                <input type="text" name="username" class="form-control" placeholder="Escriba su nombre de usuario" id="username">
+                <input type="text" name="username" class="form-control" placeholder="Escriba su nombre de usuario" id="username" required>
             </div>
             
             <div class="from-group mb-3">
